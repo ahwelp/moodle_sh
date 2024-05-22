@@ -162,6 +162,9 @@ sudo -u postgres psql -c "GRANT ALL PRIVILEGES ON DATABASE $DB_NAME TO $DB_USER;
 # Download and configure webservice
 apt-get install apache2 php7.4 php7.4-pgsql php7.4-xml php7.4-mbstring php7.4-curl php7.4-zip php7.4-gd php7.4-gd php7.4-intl php7.4-xmlrpc php7.4-soap php7.4-ldap
 
+# Download Extra packages
+apt-get install ghostscript poppler-utils graphviz aspell
+
 # Clone Moodle Version from GIT
 apt-get install git
 git clone --depth 1 --branch $MOODLE_VERSION https://github.com/moodle/moodle.git $MOODLE_PATH
